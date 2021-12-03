@@ -134,7 +134,7 @@ export default function Dashboard () {
         <div className={styles.sideBar}>Virtual Queue</div>
         <div className={styles.main}>
           <div className='page-title'>Dashboard</div>
-          <LinkWidget link={`${window.location.origin}/#/queue/${qid}`}/>
+          <LinkWidget link={`${window.location.origin}/virtual-queue/#/queue/${qid}`}/>
           <div className={styles.queueTitle}>
             {queueData.queue.name}
           </div>
