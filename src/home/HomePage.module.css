@@ -1,0 +1,19 @@
+
+.pageWrapper {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: var(--main);
+}
+
+.pageContent {
+  background-color: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.4rem;
+}
+
+.pageContent > * {
+  margin-bottom: 1rem;
+}

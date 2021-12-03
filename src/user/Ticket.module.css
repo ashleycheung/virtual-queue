@@ -1,0 +1,99 @@
+
+.ticketWrapper {
+  display: flex;
+  flex-direction: column;
+  min-width: 50%;
+  --circle-radius: 2rem;
+}
+
+.ticketTop {
+  position: relative;
+  background-color: var(--dark-blue);
+  padding: 1rem;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  border-radius: 0.4rem;
+}
+
+.ticketPosition {
+  color: var(--yellow);
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.circle {
+  width: var(--circle-radius);
+  height: var(--circle-radius);
+  border-radius: 50%;
+  background-color: var(--main);
+}
+
+.ticketTop > .centerRight {
+  position: absolute;
+  right: calc(var(--circle-radius) * -0.5);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.ticketTop > .centerLeft {
+  position: absolute;
+  left: calc(var(--circle-radius) * -0.5);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.ticketMainContent {
+  padding: calc(var(--circle-radius) * 0.5);
+}
+
+.ticketMainContentTitle {
+  color: var(--dark-blue);
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.ticketContent {
+  position: relative;
+  background-color: var(--white);
+  padding: calc(var(--circle-radius) * 0.5);
+  border-radius: 0.4rem;
+}
+
+.ticketContent > .bottomRight {
+  position: absolute;
+  left: calc(var(--circle-radius) * -0.5);
+  bottom: calc(var(--circle-radius) * -0.5);
+}
+
+.ticketContent > .bottomLeft {
+  position: absolute;
+  right: calc(var(--circle-radius) * -0.5);
+  bottom: calc(var(--circle-radius) * -0.5);
+}
+
+.ticketAction {
+  background-color: var(--white);
+  padding: 1rem;
+  border-radius: 0.4rem;
+  display: flex;
+}
+
+.ticketAction > * {
+  width: 100%;
+  margin: 1rem;
+}
+
+.iconWrapper {
+  font-size: 2rem;
+}
+
+.dashed {
+  position: absolute;
+  border: 3px dashed var(--main);
+  width: 100%;
+  bottom: -1.5px;
+  margin-bottom: 0px;
+  left: 0px;
+}

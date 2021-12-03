@@ -1,0 +1,38 @@
+:root {
+  --main: #4D61E6;
+  --red: #F8485E;
+  --white: #eeeeee;
+  --very-white: #ffffff;
+  --green: #4AA96C;
+  --dark-blue: #0A1931;
+  --yellow: #FFC107;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+.yellowBtn {
+  background-color: var(--yellow)!important;
+}
+
+.yellowBtn:hover {
+  background-color: var(--yellow)!important;
+  filter: brightness(0.9);
+}
+
+.redBtn {
+  background-color: var(--red) !important;
+  color: var(--white) !important;
+}
+
+.redBtn:hover {
+  background-color: var(--red)!important;
+  filter: brightness(0.9);
+}
+
+.page-title {
+  font-size: 2rem;
+  font-weight: 550;
+}

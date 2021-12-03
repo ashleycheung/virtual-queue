@@ -1,0 +1,48 @@
+
+.pageWrapper {
+  display: grid;
+  height: 100vh;
+  grid-template-areas: 
+    "sidebar main";
+  grid-template-columns: 1fr 7fr;
+}
+
+.sideBar {
+  background-color: var(--main);
+  padding: 2rem;
+  color: var(--white);
+}
+
+.main {
+  grid-area: main;
+  background-color: var(--very-white);
+  padding: 2rem;
+}
+
+.queueTitle {
+  padding: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--main);
+}
+
+.stateTitle {
+  font-weight: 600;
+  color: var(--main);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.emptyUsers {
+  display: grid;
+  place-items: center;
+  background-color: var(--white);
+  font-size: 1.5rem;
+  border-radius: 0.4rem;
+  min-height: 5rem;
+}
+
+.userCardList {
+  min-height: 5rem;
+}

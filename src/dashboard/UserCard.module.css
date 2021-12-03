@@ -1,0 +1,60 @@
+.userCard {
+  display: grid;
+  grid-template-areas: 
+    "username username action"
+    "time time action"
+    "message message action";
+  grid-template-columns: auto 1fr 15%;
+  padding: 1.5rem;
+  background-color: var(--white);
+  border-radius: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.cardUsername {
+  grid-area: username;
+  font-size: 1.2rem;
+  color: var(--main);
+  font-weight: 600;
+}
+
+.cardMessage {
+  grid-area: message;
+  font-size: 1rem;
+}
+
+.cardAction {
+  grid-area: action;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.cardTime {
+  grid-area: time;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  color: grey;
+}
+
+.cardTime > div {
+  margin-right: 1rem;
+}
+
+.iconButton {
+  font-size: 3rem;
+  transition: transform 0.2s;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+
+.iconButton:hover {
+  transform: scale(1.1);
+}
+
+.optionsButton {
+  composes: iconButton;
+  color: grey;
+}

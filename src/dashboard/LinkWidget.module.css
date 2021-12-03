@@ -1,0 +1,15 @@
+
+.widgetWrapper {
+  display: flex;
+  background-color: var(--white);
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.4rem;
+}
+
+.widgetLink {
+  color: grey;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}

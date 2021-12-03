@@ -1,0 +1,33 @@
+
+.pageTitle {
+  font-size: 2rem;
+}
+
+.pageWrapper {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: var(--main);
+}
+
+.pageContent {
+  background-color: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  min-width: 30%;
+}
+
+.pageContent > * {
+  margin-bottom: 1rem;
+}
+
+.actionWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.actionWrapper > * {
+  width: 100%;
+}
